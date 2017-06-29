@@ -1,0 +1,86 @@
+*, :after, :before {
+    box-sizing: border-box;
+    font-family: Proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.flights {
+  margin: 0 auto;
+  max-width: 780px;
+  padding: 15px;
+  background: #f9f9f9;
+  &__headline {
+    text-align: center;
+  }
+  &__picker {
+    max-width: 235px;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    column-width: 235px;
+    column-gap: 15px;
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+
+
+
+
+    @media screen and (max-width: 547px) {
+      li {
+        text-align: center;
+      }
+    }
+
+  }
+
+  .flight-card {
+    border: 1px solid #f4f4f4;
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    padding: 15px;
+    margin: 15px 0px;
+    width: 235px;
+    background: #fff;
+
+    &__carrier {
+      margin: 8px 0px;
+      text-transform: uppercase;
+      color: #5555e2;
+
+    }
+    &__direction {
+      margin: 8px 0px;
+      font-weight: bold;
+    }
+
+    &__time {
+      &--to,
+      &--from,
+      &--separator {
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+      }
+      &--from {
+        padding-left: 0px;
+      }
+
+      &--to > div:first-child,
+      &--from > div:first-child {
+        font-size:21px;
+      }
+
+      &--to > div:last-child,
+      &--from > div:last-child {
+        font-size: 15px;
+        color: grey;
+      }
+
+      &--separator svg {
+        width: 30px;
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const FILTER_BY_CARRIER = 'FILTER_BY_CARRIER'
